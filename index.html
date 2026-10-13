@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<script>
+/* MEDICIÓN Y CONTACTO — RELLENAR (todo vacío = no se carga ni se mide nada):
+   META_PIXEL_ID: solo números del Píxel de Meta · GA4_ID: formato G-XXXXXXXXXX
+   WHATSAPP: número con código de país y sin símbolos (ej. 15551234567); si se rellena, sale el botón "Recíbela por WhatsApp". */
+window.FUNNEL_CFG = { META_PIXEL_ID: '', GA4_ID: '', WHATSAPP: '' };
+</script>
+<script>
+/* Carga de Meta Pixel y GA4: SOLO si su ID no está vacío (y tiene formato válido). */
+(function(){
+  var C = window.FUNNEL_CFG || {};
+  var px = String(C.META_PIXEL_ID || '').trim();
+  var ga = String(C.GA4_ID || '').trim();
+  if (/^\d{5,20}$/.test(px)) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    window.fbq('init', px);
+    window.fbq('track', 'PageView');
+  }
+  if (/^G-[A-Z0-9]{4,20}$/i.test(ga)) {
+    var g = document.createElement('script');
+    g.async = true;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ga);
+    document.head.appendChild(g);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', ga); /* envía page_view automáticamente */
+  }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monetiza tus redes sin mostrar tu cara con IA: YouTube, Facebook y TikTok | YT System</title>
+<meta name="description" content="Monetiza tus redes sociales sin mostrar tu cara, todo con inteligencia artificial: YouTube, Facebook y TikTok, paso a paso. App Faceless Factory incluida.">
+<link rel="canonical" href="https://yordimm19-ops.github.io/yt-system/">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="YouTube sin cara con IA | YT System">
+<meta property="og:description" content="Monetiza tus redes sociales sin mostrar tu cara con IA: YouTube, Facebook y TikTok, paso a paso.">
+<meta property="og:url" content="https://yordimm19-ops.github.io/yt-system/">
+<meta property="og:image" content="https://yordimm19-ops.github.io/yt-system/portada-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="YT System: monetiza tus redes sociales sin mostrar tu cara. YouTube, Facebook y TikTok, todo con IA.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://yordimm19-ops.github.io/yt-system/portada-og.jpg">
+<meta name="twitter:image:alt" content="YT System: monetiza tus redes sociales sin mostrar tu cara. YouTube, Facebook y TikTok, todo con IA.">
+<meta name="theme-color" content="#0b0d12">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://yordimm19-ops.github.io/yt-system/#yordi",
+      "name": "Yordi Medina",
+      "url": "https://yordimm19-ops.github.io/yt-system/",
+      "jobTitle": "Creador de canales de YouTube sin cara con IA",
+      "sameAs": [
+        "https://www.skool.com/digital-services-lab-1785"
+      ]
+    },
+    {
+      "@type": "Course",
+      "name": "YouTube Sin Cara | YT System",
+      "description": "Comunidad y curso para crear canales de YouTube sin mostrar la cara con inteligencia artificial y aprender a monetizar redes sociales (YouTube, Facebook y TikTok), paso a paso, con la app Faceless Factory incluida.",
+      "inLanguage": "es",
+      "url": "https://www.skool.com/digital-services-lab-1785/about",
+      "provider": { "@id": "https://yordimm19-ops.github.io/yt-system/#yordi" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"¿Necesito experiencia?","acceptedAnswer":{"@type":"Answer","text":"No. Los módulos van de cero a intermedio, en orden, y el reto de entrada es publicar tu primer vídeo en 48 horas."}},
+        {"@type":"Question","name":"¿Qué es la app Faceless Factory?","acceptedAnswer":{"@type":"Answer","text":"Es la app incluida en la comunidad que te ayuda con el guion, la voz, las imágenes, la animación y el montaje."}},
+        {"@type":"Question","name":"¿Se enseña Facebook y TikTok además de YouTube?","acceptedAnswer":{"@type":"Answer","text":"Sí. Dentro aprendes los requisitos de los programas de monetización de YouTube, Facebook y TikTok y cómo adaptar el mismo contenido a cada red."}},
+        {"@type":"Question","name":"¿Y si no es para mí?","acceptedAnswer":{"@type":"Answer","text":"Tienes una garantía de 7 días: si en los primeros 7 días ves que no es para ti, te devolvemos tu dinero."}},
+        {"@type":"Question","name":"¿Qué es un canal de YouTube sin cara?","acceptedAnswer":{"@type":"Answer","text":"Es un canal donde no apareces en cámara: los vídeos se hacen con guion, voz en off, imágenes y animación. Con inteligencia artificial hoy una sola persona puede producirlos desde casa."}},
+        {"@type":"Question","name":"¿Tengo que mostrar la cara?","acceptedAnswer":{"@type":"Answer","text":"No. Todo el método está pensado para canales sin rostro."}},
+        {"@type":"Question","name":"¿Cuánto cuesta?","acceptedAnswer":{"@type":"Answer","text":"El precio actualizado está en la página de la comunidad en Skool, antes de entrar."}},
+        {"@type":"Question","name":"¿Me garantizan ingresos?","acceptedAnswer":{"@type":"Answer","text":"No. Nadie puede garantizar ingresos en YouTube. Te enseñamos un método y herramientas; los resultados dependen de tu constancia y de cada canal."}}
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{--bg:#0b0d12;--card:#141823;--line:#252b3a;--txt:#f2f4f8;--mut:#a9b1c3;--acc:#00E5FF;--acc2:#ff3b3b;--err:#ff7b7b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:28px 0 10px;text-align:center}
+.tag{display:inline-block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);border:1px solid var(--line);border-radius:99px;padding:4px 12px}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.15;margin:16px 0 10px;font-weight:800}
+h1 span{color:var(--acc)}
+.sub{color:var(--mut);font-size:18px}
+.sub2{font-size:clamp(19px,4.5vw,23px);font-weight:700;margin-bottom:6px}
+.sub2 b{color:var(--acc)}
+.video{margin:22px 0;border-radius:16px;overflow:hidden;background:#000;aspect-ratio:9/16;max-height:78vh;margin-left:auto;margin-right:auto;border:1px solid var(--line);position:relative}
+.video.h{aspect-ratio:16/9}
+.video video{width:100%;height:100%;display:block;object-fit:cover}
+.ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--mut);padding:20px;font-size:15px}
+.cta{display:block;text-align:center;background:var(--acc);color:#001018;font-weight:800;font-size:19px;text-decoration:none;padding:18px 20px;border-radius:14px;margin:18px 0 6px;box-shadow:0 8px 30px rgba(0,229,255,.25)}
+.cta:active{transform:translateY(1px)}
+.cta.alt{background:transparent;color:var(--txt);border:2px solid var(--acc);box-shadow:none}
+button.cta{width:100%;border:0;cursor:pointer;font-family:inherit;line-height:inherit}
+button.cta[disabled]{opacity:.6;cursor:wait}
+.note{text-align:center;color:var(--mut);font-size:14px}
+section{padding:28px 0;border-top:1px solid var(--line)}
+h2{font-size:24px;margin-bottom:14px}
+ul.check{list-style:none}
+ul.check li{padding:10px 0 10px 34px;position:relative;border-bottom:1px solid var(--line)}
+ul.check li:before{content:"✔";position:absolute;left:4px;color:var(--acc);font-weight:800}
+.steps{display:grid;gap:12px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.step b{color:var(--acc)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--mut);margin-top:8px}
+
+/* Valor: app incluida */
+.valor{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 18px}
+.valor .big{font-size:19px;font-weight:700;line-height:1.45;margin-bottom:16px}
+.valor .big b{color:var(--acc)}
+.vs{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.vs div{border-radius:12px;padding:14px 16px;border:1px solid var(--line);font-size:16px;color:var(--mut)}
+.vs div b{display:block;color:var(--txt);margin-bottom:4px}
+.vs .si{border-color:var(--acc);background:rgba(0,229,255,.07);color:var(--txt)}
+@media (max-width:560px){.vs{grid-template-columns:1fr}}
+
+/* Garantía */
+.garantia{display:flex;gap:14px;align-items:flex-start;background:rgba(0,229,255,.07);border:1px solid var(--acc);border-radius:14px;padding:16px;margin:26px 0 4px}
+.garantia svg{flex:none;width:44px;height:44px;color:var(--acc)}
+.garantia p{font-size:17px;line-height:1.5}
+.garantia p b{color:var(--acc)}
+
+/* Regalo / captación */
+#regalo{margin-top:22px}
+#regalo p.intro{color:var(--mut);margin-bottom:16px}
+.field{margin-bottom:14px}
+.field label.t{display:block;font-weight:700;margin-bottom:6px}
+.field label.t small{font-weight:400;color:var(--mut)}
+.field input[type=text],.field input[type=email],.field input[type=tel]{width:100%;background:#0f131c;color:var(--txt);border:1px solid #3a4258;border-radius:10px;padding:13px 14px;font:inherit;font-size:16px;min-height:48px}
+.field input[aria-invalid=true]{border-color:var(--err)}
+.err{color:var(--err);font-size:14px;margin-top:6px}
+.chk{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--mut);cursor:pointer}
+.chk input{flex:none;width:24px;height:24px;margin-top:2px;accent-color:var(--acc)}
+.chk a{color:var(--txt)}
+.hp{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.thanks{background:var(--card);border:1px solid var(--acc);border-radius:16px;padding:20px 18px;text-align:center}
+.thanks:focus{outline:none}
+.thanks h3{font-size:22px;margin-bottom:6px}
+.thanks p{color:var(--mut)}
+.thanks a:not(.cta){color:var(--txt)}
+
+footer{padding:30px 0 50px;text-align:center;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
+footer a{color:var(--txt)}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:10px 14px;background:rgba(11,13,18,.92);backdrop-filter:blur(6px);border-top:1px solid var(--line);display:none;transition:transform .2s}
+.sticky .cta{margin:0;padding:14px;font-size:17px}
+.sticky.off{transform:translateY(110%);visibility:hidden}
+@media (max-width:700px){.sticky{display:block}footer{padding-bottom:110px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sticky{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="tag">Redes sin cara · con IA</span>
+    <h1>Monetiza tus redes sociales <span>sin mostrar tu cara</span>, todo con inteligencia artificial</h1>
+    <p class="sub2"><b>YouTube, Facebook y TikTok</b>: te lo enseñamos paso a paso dentro de la comunidad.</p>
+    <p class="sub">Ideal si tienes poco conocimiento y buscas un ingreso extra. Con la app Faceless Factory incluida.</p>
+  </header>
+
+  <!-- VÍDEO: poner el archivo como video.mp4 (y portada.jpg) en esta misma carpeta. Si es horizontal, añadir la clase "h" al div. -->
+  <div class="video" id="caja-video" hidden>
+    <video id="v" controls playsinline preload="metadata" poster="portada.jpg">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="ph" id="ph" hidden>Aquí va el vídeo de Yordi (video.mp4)</div>
+  </div>
+
+  <a class="cta" data-pos="arriba" href="https://www.skool.com/digital-services-lab-1785/about" rel="noopener">Entrar a la comunidad →</a>
+  <p class="note">Te lleva a la página de la comunidad en Skool, donde ves todo antes de entrar.</p>
+
+  <section>
+    <h2>Qué hay dentro (10 módulos)</h2>
+    <ul class="check">
+      <li><b>1. Tu punto de partida:</b> plan de acción y reto «tu primer vídeo en 48 horas».</li>
+      <li><b>2. Tu primer canal sin cara:</b> de cero a un vídeo subido a YouTube, en una sola clase.</li>
+      <li><b>3. Fábrica Automática:</b> la app Faceless Factory por dentro: canal, vídeo, personajes y publicar en YouTube, Instagram, Facebook y TikTok.</li>
+      <li><b>4. Claude maneja tu YouTube:</b> investigar, guiones, títulos, miniaturas y subir, todo con IA.</li>
+      <li><b>5. Automatización con n8n:</b> YouTube, Facebook y TikTok conectados en piloto automático.</li>
+      <li><b>6. Facebook sin rostro:</b> crear la página bien, requisitos para monetizar, Reels, programar e Historias.</li>
+      <li><b>7. TikTok sin rostro:</b> requisitos para monetizar, vídeos virales, reutilizar y programar.</li>
+      <li><b>8. Edición Pro:</b> edición automática con Claude + Remotion y con CapCut: cortes, subtítulos y efectos.</li>
+      <li><b>9. Biblioteca de sistemas:</b> canales de referencia analizados y listos para cargar en la app; crece cada semana.</li>
+      <li><b>10. Recursos gratis.</b></li>
+    </ul>
+  </section>
+
+  <section id="valor">
+    <h2>La app va incluida</h2>
+    <div class="valor">
+      <p class="big">En otras comunidades pagas la comunidad y además las herramientas por separado. <b>Aquí la app Faceless Factory va incluida.</b></p>
+      <div class="vs">
+        <div><b>En otras comunidades</b>La comunidad por un lado y las herramientas por otro, cada una por separado.</div>
+        <div class="si"><b>Aquí</b>La comunidad y la app Faceless Factory juntas: guion, voz, imágenes, animación, montaje y publicar en YouTube, Instagram, Facebook y TikTok.</div>
+      </div>
+      <!-- CIFRAS: se completan con la investigación de costes -->
+    </div>
+  </section>
+
+  <section>
+    <h2>Cómo funciona</h2>
+    <div class="steps">
+      <div class="step"><b>1.</b> Eliges un nicho con demanda, sin mostrar la cara.</div>
+      <div class="step"><b>2.</b> La app te ayuda con el guion, la voz y las imágenes.</div>
+      <div class="step"><b>3.</b> Montas y publicas tu primer vídeo en 48 horas.</div>
+      <div class="step"><b>4.</b> Mides, mejoras y publicas con constancia.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>¿Es para mí?</h2>
+    <ul class="check">
+      <li>Quieres un canal de YouTube pero no quieres salir en cámara.</li>
+      <li>Te interesa usar inteligencia artificial para producir más rápido.</li>
+      <li>Tienes poco conocimiento y buscas un ingreso extra desde casa.</li>
+      <li>Empiezas desde cero o ya lo intentaste y te quedaste a medias.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Necesito experiencia?</summary><p>No. Los módulos van de cero a intermedio, en orden, y el reto de entrada es publicar tu primer vídeo en 48 horas.</p></details>
+    <details><summary>¿Qué es la app Faceless Factory?</summary><p>Es la app incluida en la comunidad que te ayuda con el guion, la voz, las imágenes, la animación y el montaje.</p></details>
+    <details><summary>¿Se enseña Facebook y TikTok además de YouTube?</summary><p>Sí. Dentro aprendes los requisitos de los programas de monetización de YouTube, Facebook y TikTok y cómo adaptar el mismo contenido a cada red.</p></details>
+    <!-- CONFIRMAR CON YORDI: días de garantía -->
+    <details><summary>¿Y si no es para mí?</summary><p>Tienes una garantía de 7 días: si en los primeros 7 días ves que no es para ti, te devolvemos tu dinero.</p></details>
+    <details><summary>¿Qué es un canal de YouTube sin cara?</summary><p>Es un canal donde no apareces en cámara: los vídeos se hacen con guion, voz en off, imágenes y animación. Con inteligencia artificial hoy una sola persona puede producirlos desde casa.</p></details>
+    <details><summary>¿Tengo que mostrar la cara?</summary><p>No. Todo el método está pensado para canales sin rostro.</p></details>
+    <details><summary>¿Cuánto cuesta?</summary><p>El precio actualizado está en la página de la comunidad en Skool, antes de entrar.</p></details>
+    <details><summary>¿Me garantizan ingresos?</summary><p>No. Nadie puede garantizar ingresos en YouTube. Te enseñamos un método y herramientas; los resultados dependen de tu constancia y de cada canal.</p></details>
+  </section>
+
+  <!-- CONFIRMAR CON YORDI: días de garantía -->
+  <div class="garantia">
+    <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 4 8 10v12c0 10.5 6.8 18.6 16 22 9.2-3.4 16-11.5 16-22V10L24 4z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="m16.5 24.5 5.5 5.5 10-11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <p><b>Garantía de 7 días:</b> si en los primeros 7 días ves que no es para ti, te devolvemos tu dinero.</p>
+  </div>
+  <a class="cta" data-pos="final" href="https://www.skool.com/digital-services-lab-1785/about" rel="noopener">Quiero entrar a la comunidad →</a>
+
+  <section id="regalo" aria-labelledby="regalo-t">
+    <h2 id="regalo-t">¿Todavía no estás listo? Llévate gratis la lista de nichos sin cara 2026</h2>
+    <div id="lead-box">
+      <p class="intro">Déjanos tu nombre y tu correo y descarga la lista al momento. Es para que elijas el tema de tu primer canal sin mostrar la cara. No tienes que comprar nada.</p>
+      <form id="lead-form" novalidate>
+        <div class="field">
+          <label class="t" for="l-nombre">Nombre</label>
+          <input id="l-nombre" name="nombre" type="text" autocomplete="given-name" maxlength="80" required aria-required="true" aria-describedby="e-nombre">
+          <p class="err" id="e-nombre" hidden></p>
+        </div>
+        <div class="field">
+          <label class="t" for="l-correo">Correo electrónico</label>
+          <input id="l-correo" name="correo" type="email" inputmode="email" autocomplete="email" maxlength="120" required aria-required="true" aria-describedby="e-correo">
+          <p class="err" id="e-correo" hidden></p>
+        </div>
+        <div class="field">
+          <label class="t" for="l-whatsapp">WhatsApp <small>(opcional, con código de país)</small></label>
+          <input id="l-whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" maxlength="30" aria-describedby="e-whatsapp">
+          <p class="err" id="e-whatsapp" hidden></p>
+        </div>
+        <div class="field">
+          <label class="chk" for="l-ok">
+            <input id="l-ok" name="consentimiento" type="checkbox" required aria-required="true" aria-describedby="e-ok">
+            <span>Acepto que usen mi nombre y mi correo (y mi WhatsApp, si lo escribo) para enviarme la lista y novedades de la comunidad. Puedo pedir la baja cuando quiera. Lee la <a href="privacidad.html" target="_blank" rel="noopener">política de privacidad<span class="sr-only"> (se abre en otra pestaña)</span></a>.</span>
+          </label>
+          <p class="err" id="e-ok" hidden></p>
+        </div>
+        <div class="hp" aria-hidden="true"><label>No rellenar este campo <input type="text" name="web" id="l-web" tabindex="-1" autocomplete="off"></label></div>
+        <button type="submit" class="cta alt" id="lead-btn">Quiero la lista gratis</button>
+        <p class="note" id="lead-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <!-- Se muestra al enviar (haya éxito o error del servidor). El PDF debe existir en nichos-sin-cara-2026.pdf -->
+    <div class="thanks" id="lead-thanks" tabindex="-1" hidden>
+      <h3 id="thanks-t">¡Gracias!</h3>
+      <p>Ya puedes descargar tu lista de nichos sin cara 2026.</p>
+      <a class="cta" id="btn-pdf" href="nichos-sin-cara-2026.pdf" download type="application/pdf">Descargar la lista (PDF)</a>
+      <a class="cta alt" id="btn-wa" href="#" target="_blank" rel="noopener" hidden>Recíbela por WhatsApp</a>
+      <p class="note" style="margin-top:14px">¿Quieres ver todo lo que hay dentro de la comunidad? <a data-pos="gracias" href="https://www.skool.com/digital-services-lab-1785/about" rel="noopener">Míralo aquí</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>Yordi Medina</b> · YouTube Sin Cara | YT System</p>
+    <p style="margin-top:6px"><a href="privacidad.html">Política de privacidad</a></p>
+    <!-- Añadir aquí los enlaces reales de las redes personales de Yordi -->
+  </footer>
+</div>
+<div class="sticky" id="sticky"><a class="cta" data-pos="sticky" href="https://www.skool.com/digital-services-lab-1785/about" rel="noopener">Entrar a la comunidad →</a></div>
+<script>
+// Si todavía no hay vídeo, muestra el aviso en vez de un reproductor vacío.
+var v=document.getElementById('v');
+v.addEventListener('error',function(){document.getElementById('ph').hidden=false;v.style.display='none'},true);
+v.querySelector('source').addEventListener('error',function(){document.getElementById('ph').hidden=false;v.style.display='none'});
+</script>
+<script>
+/* Medición, formulario del regalo y barra fija. Sin librerías. */
+(function(){
+  var CFG = window.FUNNEL_CFG || {};
+
+  // Envía un evento a Meta Pixel y/o GA4 solo si están cargados (ID rellenado). Nunca manda datos personales.
+  function ev(fbMode, fbName, gaName, params){
+    try { if (typeof window.fbq === 'function') window.fbq(fbMode, fbName, params || {}); } catch(e){}
+    try { if (typeof window.gtag === 'function') window.gtag('event', gaName, params || {}); } catch(e){}
+  }
+
+  // Clic en "Entrar a la comunidad" (todos los botones hacia Skool)
+  Array.prototype.forEach.call(document.querySelectorAll('a[href*="skool.com/digital-services-lab-1785"]'), function(a){
+    a.addEventListener('click', function(){
+      var p = { ubicacion: a.getAttribute('data-pos') || 'enlace' };
+      ev('trackCustom', 'ClicSkool', 'clic_skool', p);
+    });
+  });
+
+  // Clic en descargar el PDF
+  var btnPdf = document.getElementById('btn-pdf');
+  if (btnPdf) btnPdf.addEventListener('click', function(){
+    ev('trackCustom', 'DescargaRegalo', 'descarga_regalo', { archivo: 'nichos-sin-cara-2026.pdf' });
+  });
+
+  // Botón de WhatsApp: solo si hay número en la configuración
+  var btnWa = document.getElementById('btn-wa');
+  var waNum = String(CFG.WHATSAPP || '').replace(/\D/g, '');
+  if (btnWa && waNum.length >= 8) {
+    btnWa.href = 'https://wa.me/' + waNum + '?text=' + encodeURIComponent('Hola, quiero la lista de nichos sin cara');
+    btnWa.addEventListener('click', function(){ ev('trackCustom', 'ClicWhatsApp', 'clic_whatsapp', {}); });
+  }
+
+  // Oculta la barra fija mientras se ve el formulario (para que no tape el botón)
+  var sticky = document.getElementById('sticky'), regalo = document.getElementById('regalo');
+  if (sticky && regalo && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function(es){
+      sticky.classList.toggle('off', es[0].isIntersecting);
+    }, { threshold: 0.15 }).observe(regalo);
+  }
+
+  // Formulario del regalo
+  var form = document.getElementById('lead-form');
+  if (!form) return;
+  var el = {
+    nombre: document.getElementById('l-nombre'),
+    correo: document.getElementById('l-correo'),
+    whatsapp: document.getElementById('l-whatsapp'),
+    ok: document.getElementById('l-ok'),
+    web: document.getElementById('l-web')
+  };
+  var btn = document.getElementById('lead-btn');
+  var status = document.getElementById('lead-status');
+  var sending = false;
+
+  function setErr(key, msg){
+    var input = el[key], box = document.getElementById('e-' + key);
+    if (!input || !box) return;
+    if (msg) { box.textContent = msg; box.hidden = false; input.setAttribute('aria-invalid', 'true'); }
+    else { box.textContent = ''; box.hidden = true; input.removeAttribute('aria-invalid'); }
+  }
+  ['nombre','correo','whatsapp','ok'].forEach(function(k){
+    var evt = k === 'ok' ? 'change' : 'input';
+    el[k].addEventListener(evt, function(){ setErr(k, ''); });
+  });
+
+  function validate(){
+    var bad = [];
+    var n = el.nombre.value.trim(), c = el.correo.value.trim(), w = el.whatsapp.value.trim();
+    if (n.length < 2) { setErr('nombre', 'Escribe tu nombre.'); bad.push('nombre'); } else setErr('nombre', '');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(c)) { setErr('correo', 'Escribe un correo válido, por ejemplo nombre@correo.com.'); bad.push('correo'); } else setErr('correo', '');
+    var digits = w.replace(/\D/g, '');
+    if (w && (!/^[0-9+\s().-]+$/.test(w) || digits.length < 8 || digits.length > 15)) { setErr('whatsapp', 'Revisa el número: solo cifras, con código de país (8 a 15 dígitos), o déjalo en blanco.'); bad.push('whatsapp'); } else setErr('whatsapp', '');
+    if (!el.ok.checked) { setErr('ok', 'Marca la casilla para poder enviarte la lista.'); bad.push('ok'); } else setErr('ok', '');
+    return bad;
+  }
+
+  function showThanks(nombre){
+    var t = document.getElementById('lead-thanks'), box = document.getElementById('lead-box');
+    var first = String(nombre || '').trim().split(/\s+/)[0].slice(0, 40);
+    document.getElementById('thanks-t').textContent = first ? '¡Gracias, ' + first + '!' : '¡Gracias!';
+    if (btnWa && waNum.length >= 8) btnWa.hidden = false;
+    box.hidden = true;
+    t.hidden = false;
+    t.focus();
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (sending) return;
+    status.textContent = '';
+    var bad = validate();
+    if (bad.length) {
+      status.textContent = 'Hay ' + bad.length + (bad.length === 1 ? ' campo' : ' campos') + ' por revisar.';
+      el[bad[0]].focus();
+      return;
+    }
+    // Trampa para robots: si el campo oculto viene relleno, no se envía nada.
+    if (el.web.value) { showThanks(el.nombre.value); return; }
+
+    sending = true;
+    btn.disabled = true;
+    btn.textContent = 'Enviando…';
+
+    var payload = {
+      nombre: el.nombre.value.trim(),
+      correo: el.correo.value.trim(),
+      whatsapp: el.whatsapp.value.trim(),
+      origen: 'funnel-ytsystem',
+      fecha: new Date().toISOString()
+    };
+
+    ev('track', 'Lead', 'generate_lead', { content_name: 'lista-nichos-sin-cara-2026' });
+
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    var timer = setTimeout(function(){ if (ctrl) ctrl.abort(); }, 8000);
+    var opts = { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) };
+    if (ctrl) opts.signal = ctrl.signal;
+
+    // Haya éxito o error del servidor, se muestra el agradecimiento y el regalo.
+    // OJO: si /api/lead no existe o falla, el contacto NO se guarda en ningún sitio (revisar la consola).
+    var p;
+    var fd = new URLSearchParams(); fd.append('entry.1027254431', payload.nombre); fd.append('entry.1528322375', payload.correo); fd.append('entry.1326941320', payload.whatsapp); fd.append('entry.1079771792', 'Sí');
+    try { p = fetch('https://docs.google.com/forms/d/e/1FAIpQLSe9r2Uo7bqMD37JEtwGDCkE86a0dTJK1SFskYwyIFkAePBYgw/formResponse', { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: fd.toString() }); } catch(err){ p = Promise.reject(err); }
+    p.then(function(r){  })
+     .catch(function(err){ if (window.console) console.warn('lead: no se pudo enviar', err); })
+     .then(function(){ clearTimeout(timer); showThanks(payload.nombre); });
+  });
+})();
+</script>
+</body>
+</html>
