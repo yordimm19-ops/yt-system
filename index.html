@@ -228,6 +228,7 @@ footer a{color:var(--txt)}
     a.addEventListener('click', function(){
       var p = { ubicacion: a.getAttribute('data-pos') || 'enlace' };
       ev('trackCustom', 'ClicSkool', 'clic_skool', p);
+      ev('track', 'Lead', 'generate_lead', p);
     });
   });
 
