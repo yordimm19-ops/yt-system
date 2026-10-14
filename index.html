@@ -170,8 +170,8 @@ footer a{color:var(--txt)}
 
   <!-- VÍDEO: poner el archivo como video.mp4 (y portada.jpg) en esta misma carpeta. Mientras no exista, la caja se oculta sola. -->
   <div class="video" id="caja-video">
-    <video id="v" controls playsinline preload="metadata" poster="portada.jpg">
-      <source src="video.mp4" type="video/mp4">
+    <video id="v" controls playsinline preload="metadata" poster="portada_v.jpg">
+      <source src="video_v.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -209,6 +209,8 @@ footer a{color:var(--txt)}
 </div>
 <div class="sticky" id="sticky"><a class="cta" data-pos="sticky" href="https://www.skool.com/digital-services-lab-1785/about" rel="noopener">Unirse gratis →</a></div>
 <script>
+// Celular = vídeo vertical; pantalla ancha = vídeo horizontal (caja 16:9).
+(function(){var v=document.getElementById("v"),c=document.getElementById("caja-video");if(!v||!c)return;if(window.matchMedia("(min-width: 820px) and (orientation: landscape)").matches){c.classList.add("h");v.poster="portada.jpg";var s=v.querySelector("source");if(s){s.src="video.mp4";v.load()}}})();
 // Si todavía no hay vídeo, oculta la caja (sin ningún aviso).
 (function(){var v=document.getElementById("v"),c=document.getElementById("caja-video");if(!v||!c)return;function off(){c.style.display="none"}var s=v.querySelector("source");if(s)s.addEventListener("error",off);v.addEventListener("error",off,true)})();
 </script>
