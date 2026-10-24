@@ -235,6 +235,13 @@ footer a{color:var(--txt)}
     });
   });
 
+  // Clic en "Únete al grupo de Telegram"
+  Array.prototype.forEach.call(document.querySelectorAll('a[href*="t.me/ytsincara_avisos"]'), function(a){
+    a.addEventListener('click', function(){
+      ev('trackCustom', 'ClicTelegram', 'clic_telegram', { ubicacion: a.getAttribute('data-pos') || 'enlace' });
+    });
+  });
+
   // Clic en descargar el PDF
   var btnPdf = document.getElementById('btn-pdf');
   if (btnPdf) btnPdf.addEventListener('click', function(){
